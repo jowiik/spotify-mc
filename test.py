@@ -2,8 +2,8 @@ import requests
 import spotipy
 from spotipy.oauth2 import SpotifyOAuth
 
-CLIENT_ID = "bb8477591680446887bad33cd7229cf7"
-CLIENT_SECRET = "f27bae356dbb461b95c7bbf71a956517"
+CLIENT_ID = "your id"
+CLIENT_SECRET = "your secret"
 redirectURI = "http://localhost:8888/callback"
 scope = "user-read-currently-playing"
 sp = spotipy.Spotify(auth_manager=SpotifyOAuth(client_id=CLIENT_ID, client_secret=CLIENT_SECRET, redirect_uri=redirectURI, scope=scope))
